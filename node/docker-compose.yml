@@ -1,0 +1,10 @@
+services:
+  DB:
+    container_name: MysqlDB
+    image: mysql:8.0
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: MFD24@excel@e24e
+      MYSQL_DATABASE: database_app
+    ports:
+      - "3306:3306"
